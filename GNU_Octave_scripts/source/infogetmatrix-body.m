@@ -1,6 +1,6 @@
 function matrix = infogetmatrix(varargin) %<<<1
         % identify and check inputs %<<<2
-        [printusage, infostr, key, scell] = get_id_check_inputs('infogetmatrix', varargin{:});
+        [printusage, infostr, key, scell, is_parsed] = get_id_check_inputs('infogetmatrix', varargin{:});
         if printusage
                 print_usage()
         endif
