@@ -340,6 +340,10 @@ if isempty(strfind(s, CELLSTR)) %<<<2
                         data = [data; c];
                 endfor
         end_try_catch
+        
+        % ###note: was added to get rid of start/end whites
+        data = strtrim(data);
+        
 else %<<<2
         % quotes are inside of sheet, very slow method will be used
         % this method parse character by character
