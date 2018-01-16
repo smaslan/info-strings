@@ -296,12 +296,16 @@ CELLSTR = '"';          % quoted fields character
 LF = char(10);          % line feed
 CR = char(13);          % carriage return
 
-if isempty(strfind(s, CELLSTR)) %<<<2
+if ~any(find(s > char(32)))
+        % empty matrix (just white-spaces)
+        data = {};
+
+elseif isempty(strfind(s, CELLSTR)) %<<<2
 % no quotes, simple method will be used
 
         % methods converts all end of lines to LF, split by LF,
         % and two methods to parse lines
-
+                
         % replace all CRLF to LF:
         s = strrep(s, [CR LF], LF);
         % replace all LFCR to LF:
