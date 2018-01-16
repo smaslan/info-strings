@@ -10,7 +10,9 @@ function matrix = infogetmatrix(varargin) %<<<1
         % parse csv:
         matrix = csv2cell(infostr);
         % convert to numbers:
-        matrix = cellfun(@str2double, matrix, 'UniformOutput', false);
-        matrix = cell2mat(matrix);
+        % ###note: imho uniformoutput=false not needed, because str2double() never fails, it just returns NaN
+        %matrix = cellfun(@str2double, matrix, 'UniformOutput', false);
+        matrix = cellfun(@str2double, matrix);
+        %matrix = cell2mat(matrix);
 endfunction
 
