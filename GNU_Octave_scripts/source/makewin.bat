@@ -98,3 +98,77 @@ posix2iso_time.m+^
 isOctave.m+^
 infogettimematrix-tests.m ^
 ..\infogettimematrix.m
+
+copy /b ^
+infosetmatrix-header.m+^
+infosetmatrix-body.m+^
+set_id_check_inputs.m+^
+set_matrix.m+^
+set_section.m+^
+get_section.m+^
+infosetmatrix-tests.m ^
+..\infosetmatrix.m
+	
+copy /b ^
+infosetnumber-header.m+^
+infosetnumber-body.m+^
+set_id_check_inputs.m+^
+set_key.m+^
+set_section.m+^
+get_section.m+^
+infosetnumber-tests.m ^
+..\infosetnumber.m
+	
+copy /b ^
+infosetsection-header.m+^
+infosetsection-body.m+^
+set_section.m+^
+get_section.m+^
+infosetsection-tests.m ^
+..\infosetsection.m
+	
+copy /b ^
+infosettext-header.m+^
+infosettext-body.m+^
+set_id_check_inputs.m+^
+set_key.m+^
+set_section.m+^
+get_section.m+^
+infosettext-tests.m ^
+..\infosettext.m
+	
+copy /b ^
+infosettextmatrix-header.m+^
+infosettextmatrix-body.m+^
+set_id_check_inputs.m+^
+set_matrix.m+^
+set_section.m+^
+get_section.m+^
+infosettextmatrix-tests.m ^
+..\infosettextmatrix.m
+	
+copy /b ^
+infosettime-header.m+^
+infosettime-body.m+^
+set_id_check_inputs.m+^
+set_key.m+^
+set_section.m+^
+get_section.m+^
+iso2posix_time.m+^
+posix2iso_time.m+^
+isOctave.m+^
+infosettime-tests.m ^
+..\infosettime.m
+	
+copy /b ^
+infosettimematrix-header.m+^
+infosettimematrix-body.m+^
+set_id_check_inputs.m+^
+set_matrix.m+^
+set_section.m+^
+get_section.m+^
+iso2posix_time.m+^
+posix2iso_time.m+^
+isOctave.m+^
+infosettimematrix-tests.m ^
+..\infosettimematrix.m

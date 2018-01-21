@@ -11,7 +11,7 @@ function infostr = infosetsection(varargin) %<<<1
         % (This is because of Matlab cannot translate special characters
         % in strings. GNU Octave distinguish '' and "")
         NL = sprintf('\n');
-
+        
         % constant - number of spaces in indented section:
         INDENT_LEN = 8;
 
@@ -51,8 +51,11 @@ function infostr = infosetsection(varargin) %<<<1
                 scell = varargin{4};
         endif
         % check values of inputs
-        if (~ischar(infostr) || ~ischar(key) || ~ischar(val))
-                error('infosetsection: infostr, key and val must be strings')
+        if ~(ischar(infostr) || isstruct(infostr)) || ~(ischar(val) || isstruct(val))
+                error('infosetsection: infostr and val must be strings or parsed info-string')
+        endif
+        if ~ischar(key)
+                error('infosetsection: key must be string')
         endif
         if (~iscell(scell))
                 error('infosetsection: scell must be a cell')
@@ -65,7 +68,7 @@ function infostr = infosetsection(varargin) %<<<1
         if ~isempty(key)
                 scell = [scell {key}];
         endif
-
+        
         % make infostr %<<<2
         infostr = set_section('infosetsection', infostr, val, scell, true);
 endfunction

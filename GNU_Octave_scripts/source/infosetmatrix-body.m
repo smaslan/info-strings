@@ -18,7 +18,10 @@ function infostr = infosetmatrix(varargin) %<<<1
         % convert matrix into text:
         matastext = mat2str(val);
         % remove leading '[' and closing ']':
-        matastext = matastext(2:end-1);
+        if numel(val) > 1
+            % #fix: the [] are there only if 'val' has more than one item
+            matastext = matastext(2:end-1);
+        end
         % replace semicolons to newlines and spaces to semicolons:
         matastext = strrep(matastext, ';', NL);
         matastext = strrep(matastext, ' ', '; ');
