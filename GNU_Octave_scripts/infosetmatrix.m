@@ -51,7 +51,7 @@ function infostr = infosetmatrix(varargin) %<<<1
                 print_usage()
         endif
         % check content of val:
-        if (~ismatrix(val) || ~isnumeric(val))
+        if (ndims(val) > 2 || ~isnumeric(val))
                 error('infosetmatrix: val must be a numeric matrix')
         endif
 
@@ -354,6 +354,8 @@ function [section, endposition] = get_section(functionname, infostr, scell) %<<<
                 
                 % assing result
                 section = infostr;
+
+                endposition = 0; % matlab default
                 
         else
                 % --- RAW INFO-STRING ---                

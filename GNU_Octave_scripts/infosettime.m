@@ -327,6 +327,8 @@ function [section, endposition] = get_section(functionname, infostr, scell) %<<<
                 
                 % assing result
                 section = infostr;
+
+                endposition = 0; % matlab default
                 
         else
                 % --- RAW INFO-STRING ---                
