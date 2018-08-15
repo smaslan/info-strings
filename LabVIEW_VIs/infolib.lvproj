@@ -49,7 +49,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{778B5B61-096C-445D-967F-707A1D4B28C1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7DC70B6C-18D5-4FB6-9BD8-FA2620532EC0}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/infolib.lvlib</Property>
