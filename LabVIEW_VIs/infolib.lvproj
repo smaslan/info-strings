@@ -38,7 +38,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{AA26BF06-549A-4358-8BBB-D1ACC0582C52}</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
-				<Property Name="Bld_version.patch" Type="Int">5</Property>
+				<Property Name="Bld_version.patch" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">infolib.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/infolib-[VersionNumber]/NI_AB_PROJECTNAME.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -49,7 +49,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5337BCD8-909A-4BF3-99DD-A39A4476AE5C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CDE0A207-8E76-4F21-88F5-9F2C5DEDD90B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/infolib.lvlib</Property>
@@ -63,7 +63,7 @@
 				<Property Name="TgtF_companyName" Type="Str">CMI</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Info description files library</Property>
 				<Property Name="TgtF_internalName" Type="Str">Info description files library</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 CMI</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 CMI</Property>
 				<Property Name="TgtF_productName" Type="Str">Info description files library</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{8C942BDF-0848-4606-8F67-645A9B2C4600}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">infolib.lvlibp</Property>
