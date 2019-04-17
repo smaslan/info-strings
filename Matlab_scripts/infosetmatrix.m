@@ -46,7 +46,7 @@ function infostr = infosetmatrix(varargin)%<<<1
                 print_usage()
         end
         % check content of val:
-        if (~ismatrix(val) || ~isnumeric(val))
+        if (ndims(val) > 2 || ~isnumeric(val))
                 error('infosetmatrix: val must be a numeric matrix')
         end
 

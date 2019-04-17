@@ -92,6 +92,7 @@ function [section, endposition] = get_section(functionname, infostr, scell) %<<<
         %
         % function suppose all inputs are ok!
 
+        
         if isstruct(infostr)
                 % --- PARSED INFO-STRING ---
                 
@@ -110,6 +111,9 @@ function [section, endposition] = get_section(functionname, infostr, scell) %<<<
                 
                 % assing result
                 section = infostr;
+                
+                % needed for matlab...
+                endposition = NaN;
                 
         else
                 % --- RAW INFO-STRING ---                
